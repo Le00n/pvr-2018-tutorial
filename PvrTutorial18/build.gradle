@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+def srcJava = new File("src/main/java")
+def srcWebapp = new File("src/main/webapp")
+def srcResource = new File("src/main/resources")
+def testJava = new File("src/test/java")
+def testResources = new File("src/test/resources")
+
+eclipse {
+	jdt {
+		sourceCompatibility = 1.8
+		targetCompatibility = 1.8
+	}
+}
+
+
+repositories {
+	mavenCentral()
+}
+
+dependencies{
+
+}
